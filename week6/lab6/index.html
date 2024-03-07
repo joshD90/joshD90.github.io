@@ -14,6 +14,32 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#top-header">Top</a>
+            <a class="nav-link" href="#about-me">Features</a>
+            <a class="nav-link" href="#education-section">Education</a>
+            <a class="nav-link" href="#employment-section">Employment</a>
+            <a class="nav-link" href="#skills-section">Skills</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <section class="container text-muted text-center">
       <h1 class="mt-4 mb-4 text-dark" id="top-header">Joshua Dancey</h1>
       <p>Email: <span class="bold">joshuadancey@hotmail.com</span></p>
@@ -25,6 +51,11 @@
         Development. Further to this I have also been a self-taught developer. I
         am curious, passionate and motivated as well as being a self-starter
       </p>
+      <div class="d-flex">
+        <button class="btn btn-primary ms-auto me-auto">
+          <a href="./aboutMe.html"></a>More About Me
+        </button>
+      </div>
     </section>
 
     <section class="container text-center" id="education-section">
@@ -86,14 +117,8 @@
         </div>
       </div>
     </section>
-    <div class="navigation">
-      <a href="#top-header">Top</a>
-      <a href="#about-me">About Me</a>
-      <a href="#education-section">Education</a>
-      <a href="#employment-section">Employment</a>
-      <a href="#skills-section">Skills</a>
-    </div>
-    <div id="footer">
+
+    <div id="footer" class="text-center">
       <p>
         LinkedIn:
         <a href="https://www.linkedin.com/in/jdancey" target="_blank"
@@ -104,7 +129,6 @@
         Github: <a href="https://github.com/joshD90" target="_blank" />Joshua's
         Github
       </p>
-      <a href="./aboutMe.html">More About Me</a>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
