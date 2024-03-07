@@ -1,0 +1,92 @@
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+  text-align: center;
+  position: relative;
+}
+
+.bold {
+  font-style: bold;
+}
+
+.text-shadow {
+  text-shadow: 0.1rem 0.1rem #666;
+}
+
+hr {
+  width: 30%;
+}
+
+.about-me {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me p {
+  width: 60%;
+  text-align: justify;
+}
+
+.education-section div {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.employment-section div {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-list-container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+#skillsUl {
+  width: fit-content;
+  text-align: left;
+  list-style: circle;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 1rem;
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+#footer {
+  font-style: normal;
+}
+
+@media screen and (max-width: 640px) {
+  .about-me p {
+    width: 90%;
+  }
+  .skills-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

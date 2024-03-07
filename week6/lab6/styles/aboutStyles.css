@@ -1,0 +1,137 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1rem;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.aboutMe__banner {
+  display: flex;
+  align-items: center;
+  background-color: cornflowerblue;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+}
+
+.aboutMe__banner img {
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  transform: translateY(1rem);
+  box-shadow: 1px 1px 8px black;
+  border: 3px solid white;
+  margin-top: 2rem;
+}
+
+.aboutMe__banner-text h1 {
+  font-size: xx-large;
+  margin: 0.3rem 0 1rem 0;
+}
+.aboutMe__banner-text h3 {
+  margin: 0.3rem 0;
+}
+
+.aboutMe__banner-buttonsContainer {
+  display: flex;
+  gap: 1rem;
+}
+.aboutMe__banner-buttonsContainer button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 50%;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  color: #f7f7f7;
+}
+
+.aboutMe__banner-buttonsContainer button:hover {
+  filter: brightness(0.95);
+}
+.primary {
+  background-color: rgb(0, 169, 0);
+}
+.secondary {
+  background-color: #888;
+}
+
+.aboutMe__details {
+  box-shadow: 0px 0px 20px -5px #333;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.aboutMe__details-blurb {
+  padding: 0 1rem;
+}
+
+.aboutMe__details-blurb h1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.aboutMe__details-contact {
+}
+
+.aboutMe__details-contact td {
+  padding: 0.5rem;
+}
+
+.aboutMe__details-contact tr :first-child {
+  font-weight: 700;
+}
+
+.skills__container {
+  margin-top: 2rem;
+  box-shadow: 0px 0px 20px -5px #333;
+  padding: 1rem;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.skills__grid div {
+  width: 2rem;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills__grid img {
+  width: 100%;
+  height: 2rem;
+}
+
+/* Mobile first Design */
+@media screen and (min-width: 640px) {
+  .aboutMe__banner {
+    flex-direction: row;
+  }
+
+  .aboutMe__banner img {
+    margin-top: 0;
+  }
+
+  .aboutMe__banner-text {
+    margin-left: -10rem;
+  }
+
+  .aboutMe__details {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+  }
+
+  .skills__grid {
+    grid-template-columns: 33% 33% 33%;
+  }
+}

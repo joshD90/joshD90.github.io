@@ -1,0 +1,48 @@
+body {
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0;
+  background-color: #333;
+  font-family: "Courier New", monospace;
+  text-align: center;
+}
+
+h1 {
+  color: green;
+  font-size: 4rem;
+}
+
+p {
+  color: green;
+  font-size: 2rem;
+}
+span {
+  font-size: 2rem;
+}
+
+#welcome {
+  color: green;
+}
+#to {
+  color: white;
+}
+#nci {
+  color: orange;
+}
+
+ul {
+  width: fit-content;
+  margin: auto;
+}
+
+li {
+  text-shadow: 2px 2px green;
+  font-size: 2rem;
+}
+
+ul {
+  color: white;
+}
+ol {
+  color: orange;
+}
