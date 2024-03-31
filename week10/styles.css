@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#list-container {
+  padding: 1rem;
+  box-shadow: 0 0 2rem 0.2rem #888;
+  border-radius: 1rem;
+}
+
+#list-container input {
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  border: 1px solid #666;
+}
+
+#list-container button {
+  padding: 0.3rem 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: none;
+  background-color: #666;
+}
+
+#list-container button:hover {
+  background-color: rgb(79, 121, 79);
+}
+
+#list-container li {
+  cursor: pointer;
+}
+
+#list-container li:hover {
+  color: red;
+}
